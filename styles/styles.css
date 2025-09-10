@@ -1,0 +1,159 @@
+:root {
+  --primary: #004080;
+  --secondary: #00aaff;
+  --background: #f9f9f9;
+  --text: #333;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: var(--background);
+  color: var(--text);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--primary);
+  color: white;
+  padding: 1rem;
+}
+
+header .logo {
+
+  display: flex;
+
+}
+header .logo img {
+  height: 40px;
+  margin-right: 10px;
+  display: flex;
+
+}
+header .logo h1 {
+ font-size: 20px;
+
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a.active {
+  border-bottom: 2px solid var(--secondary);
+}
+
+#menuBtn {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+}
+
+.hero {
+  position: relative;
+  text-align: center;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+}
+
+.cta {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background: var(--secondary);
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin: 2rem;
+}
+
+.card {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  background: white;
+}
+.weather-info  {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.weather-info img {
+  max-height: 100px;
+}
+
+.business-spotlight {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin: 2rem;
+}
+.business-details {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+
+}
+.business p h4 {
+margin: 0px;
+
+}
+.business .divider {
+  border-bottom: 1px solid #ddd;
+  margin: 10px 0;
+
+}
+
+.business img {
+  max-width: 130px;
+  margin-right: 10px;
+}
+
+footer {
+  background: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.socials img {
+  width: 24px;
+  margin: 0 5px;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background: var(--primary);
+    padding: 1rem;
+  }
+  nav ul.show {
+    display: flex;
+  }
+  #menuBtn {
+    display: block;
+  }
+}
