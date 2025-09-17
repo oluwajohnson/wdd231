@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ilado Chamber of Commerce</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="../images/ilado.webp" alt="Ilado Chamber of Commerce logo">
+      <h1>Ilado Chamber of Commerce</h1>
+    </div>
+    <nav>
+      <button id="menuBtn">☰</button>
+      <ul id="menu">
+        <li><a href="../index.html" class="active">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="discover.html">Discover</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img src="../images/office3.jpg" alt="Scalable, responsive hero image">
+      <button class="cta">Keynote Tickets</button>
+    </section>
+
+    <h2>Home</h2>
+    <section class="info-grid">
+      <div class="card"> <h3>Events</h3> <p>Upcoming events will be listed here...</p></div>
+      <div class="card weather">
+        <h3>Current Weather</h3>
+        <div class="weather-info">
+            <img id="weatherIcon" src="../images/weather.png" alt="Weather Icon">
+            <div id="weather"></div>
+        </div>
+      </div>
+      <div class="card forecast">
+        <h3>Weather Forecast</h3>
+        <ul>
+          <li>Today: <span id="todayTemp"></span></li>
+          <li>Tomorrow: <span id="tomorrowTemp"></span></li>
+          <li>Next Day: <span id="nextDayTemp"></span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="business-spotlight">
+      <div class="business">
+        
+        <h4>Notamic Chamber</h4>
+        <p>Work in space</p>
+        <div class="divider"></div>
+        <div class="business-details">
+            <div>
+                <img src="../images/office1.jpg" alt="Business logo">
+            </div>
+            <div>
+                <p>Email: info@notamic.com</p>
+                <p>Phone: 800-666-1234</p>
+                <p>Website: notamic.com</p>
+            </div>
+        </div>
+      </div>
+      <div class="business">
+        
+        <h4>Garry Chamber</h4>
+        <p>Work in space</p>
+        <div class="divider"></div>
+        <div class="business-details">
+            <div>
+                <img src="../images/office2.jpg" alt="Business logo">
+            </div>
+            <div>
+                <p>Email: info@garry.com</p>
+                <p>Phone: 800-555-1234</p>
+                <p>Website: garry.com</p>
+            </div>
+        </div>
+      </div>
+      <div class="business">
+        
+        <h4>Johnson Chamber</h4>
+        <p>Work in space</p>
+        <div class="divider"></div>
+        <div class="business-details">
+            <div>
+                <img src="../images/office3.jpg" alt="Business logo">
+            </div>
+            <div>
+                <p>Email: info@johnson.com</p>
+                <p>Phone: 800-444-1234</p>
+                <p>Website: johnson.com</p>
+            </div>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    <div class="contact">
+      <p><strong>Ilado Chamber of Commerce</strong></p>
+      <p>10 Market Street, Ilado City</p>
+      <p>Email: info@iladocc.org | Phone: (223) 555-2300</p>
+    </div>
+    <div class="socials">
+      <a href="#"><img src="../images/youtube.png" alt="YouTube"></a>
+      <a href="#"><img src="../images/twitter.jpg" alt="Twitter"></a>
+      <a href="#"><img src="../images/linkedin.png" alt="LinkedIn"></a>
+    </div>
+    <p>WDD231 Project | © <span id="currentyear"></span> Ilado Chamber of Commerce | Last Updated: <span id="lastModified"></span></p>
+  </footer>
+
+  <script src="../scripts/scripts.js"></script>
+  <script src="../scripts/navigation.js"></script>
+  <script src="../scripts/date.js"></script>
+</body>
+</html>
