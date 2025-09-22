@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <title>Ilado Chamber Directory — Local Business Directory</title>
+  <meta name="description" content="Directory of member businesses for the Ilado Chamber of Commerce — find local services, contact information, membership level, and more." />
+  <meta name="author" content="Your Full Name" />
+
+
+  <link rel="icon" type="image/png" href="images/favicon-32.png" />
+
+  
+  <meta property="og:description" content="Discover member businesses in Ilado — contact info, membership level, and more." />
+  <meta property="og:image" content="https://example.com/images/og-directory.jpg" />
+  <meta property="og:url" content="https://example.com/directory.html" />
+  <meta property="og:type" content="website" />
+
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+  
+  <script defer src="scripts/directory.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <a href="index.html" class="logo-link">
+          <img src="images/favicon-32.png" alt="Ilado Chamber logo" class="logo" />
+          <span class="site-title">Ilado Chamber of Commerce</span>
+        </a>
+      </div>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <button id="menuBtn" aria-expanded="false" aria-controls="menuList">☰</button>
+        <ul id="menuList" class="menu-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="directory.html" class="active">Directory</a></li>
+          <li><a href="chamber/index.html">Chamber</a></li>
+          <li><a href="final.html">Final</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Member Directory</h1>
+
+    <section class="directory-controls" aria-label="Directory controls">
+      <div class="view-toggle">
+        <button id="gridView" aria-pressed="true">Grid View</button>
+        <button id="listView" aria-pressed="false">List View</button>
+      </div>
+
+      <div class="filters">
+        <button id="allMembers">All</button>
+        <button id="memberLevel1">Member</button>
+        <button id="memberLevel2">Silver</button>
+        <button id="memberLevel3">Gold</button>
+      </div>
+
+      <div class="summary">
+        <span id="total" aria-live="polite"></span>
+      </div>
+    </section>
+
+    <section id="members" class="members-grid" aria-live="polite">
+      <!-- Member cards will be injected here by scripts/directory.js -->
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="contact">
+        <p><strong>Ilado Chamber of Commerce</strong></p>
+        <p>10 Market Street, Ilado City</p>
+        <p>Email: info@iladocc.org | Phone: (223) 555-2300</p>
+      </div>
+
+      <div class="dev-info">
+        <p>&copy; <span id="currentyear"></span> | Your Full Name | WDD 231</p>
+        <p id="lastModified"></p>
+      </div>
+
+      <div class="socials">
+        <a href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
