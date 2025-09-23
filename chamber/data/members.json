@@ -3,63 +3,70 @@
     "name": "Ilado Hardware Supply",
     "address": "12 Market Street, Ilado City",
     "phone": "(223) 555-0101",
-    "website": "https://iladohardware.example.com",
+    "website": "https://iladohardware.com",
     "image": "images/office1.jpg",
     "membership": 3,
+    "level": "gold",
     "notes": "Construction and home supplies"
   },
   {
     "name": "Sunrise Bakery",
     "address": "8 Baker Lane, Ilado",
     "phone": "(223) 555-0102",
-    "website": "https://sunrisebakery.example.com",
+    "website": "https://sunrisebakery.com",
     "image": "images/office2.jpg",
     "membership": 2,
+    "level": "gold",
     "notes": "Breads, cakes and catering"
   },
   {
     "name": "Coastal Travel Agency",
     "address": "45 Ocean Ave, Ilado",
     "phone": "(223) 555-0103",
-    "website": "https://coastaltravel.example.com",
+    "website": "https://coastaltravel.com",
     "image": "images/office3.jpg",
     "membership": 3,
+    "level": "silver",
     "notes": "Travel and tours"
   },
   {
     "name": "Green Gardens Landscaping",
     "address": "22 Greenway Road, Ilado",
     "phone": "(223) 555-0104",
-    "website": "https://greengardens.example.com",
+    "website": "https://greengardens.com",
     "image": "images/office1.jpg",
     "membership": 1,
+    "level": "bronze",
     "notes": "Residential and commercial landscaping"
   },
   {
     "name": "Bright Minds Tutoring",
     "address": "100 Study Blvd, Ilado",
     "phone": "(223) 555-0105",
-    "website": "https://brightminds.example.com",
+    "website": "https://brightminds.com",
     "image": "images/office2.jpg",
     "membership": 1,
+    "level": "bronze",
     "notes": "Educational services"
   },
   {
     "name": "Riverside Pharmacy",
     "address": "7 Health St, Ilado",
     "phone": "(223) 555-0106",
-    "website": "https://riversidepharm.example.com",
+    "website": "https://riversidepharm.com",
     "image": "images/office1.jpg",
     "membership": 2,
+    "level": "silver",
     "notes": "Prescriptions and health supplies"
   },
   {
     "name": "PixelWorks Studio",
     "address": "3 Design Plaza, Ilado",
     "phone": "(223) 555-0107",
-    "website": "https://pixelworks.example.com",
+    "website": "https://pixelworks.com",
     "image": "images/office3.jpg",
     "membership": 3,
+    "level": "gold",
     "notes": "Graphic and web design"
   }
 ]
