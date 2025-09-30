@@ -1,4 +1,4 @@
-// Footer last modified
+document.getElementById('timestamp').value = new Date().toISOString();// Footer last modified
 document.getElementById("lastModified").textContent = document.lastModified;
 
 // Current year

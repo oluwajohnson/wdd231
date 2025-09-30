@@ -1,0 +1,75 @@
+
+    /* Simple layout for form + cards */
+    main {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+
+    @media (min-width: 768px) {
+      main {
+        grid-template-columns: 2fr 1fr;
+      }
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    label {
+      display: flex;
+      flex-direction: column;
+      font-weight: bold;
+    }
+
+    input, textarea, select {
+      padding: 0.5rem;
+      font-size: 1rem;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+      animation: fadeIn 2s ease-in;
+    }
+
+    @media (min-width: 768px) {
+      .cards {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .card {
+      border: 1px solid #ccc;
+      padding: 1rem;
+      border-radius: 10px;
+      background: #f9f9f9;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    /* Animation */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Simple modal styling */
+    dialog {
+      border: none;
+      border-radius: 10px;
+      padding: 1rem;
+      max-width: 400px;
+    }
+
+    dialog::backdrop {
+      background: rgba(0,0,0,0.6);
+    }
+  
