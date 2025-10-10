@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <title>Ilado Chamber Directory — Local Business Discovery</title>
+  <meta name="description" content="Discovery of member businesses for the Ilado Chamber of Commerce — find local services, contact information, membership level, and more." />
+  <meta name="author" content="Ogunleye Johnson" />
+
+
+  <link rel="icon" type="image/png" href="images/favicon-32.png" />
+
+  
+  <meta property="og:description" content="Discover member businesses in Ilado — contact info, membership level, and more." />
+  <meta property="og:image" content="https://example.com/images/og-directory.jpg" />
+  <meta property="og:url" content="https://example.com/directory.html" />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/medium.css">
+  <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+<header>
+    <div class="logo">
+      <img src="images/ilado.webp" alt="Ilado Chamber of Commerce logo">
+      <h1>Ilado Chamber of Commerce</h1>
+    </div>
+    <nav>
+      <button id="menuBtn">☰</button>
+      <ul id="menu">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html"  >Join</a></li>
+        <li><a href="discover.html" class="active">Discover</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="discover">
+    <section class="visit-message" id="visit-message"></section>
+
+    <h2>Discover Our Farming Community</h2>
+    <div class="discover-grid" id="discover-grid">
+      <!-- Cards populated by JS -->
+    </div>
+  </main>
+
+  <footer>
+    <div class="contact">
+      <p><strong>Ilado Chamber of Commerce</strong></p>
+      <p>10 Market Street, Ilado City</p>
+      <p>Email: info@iladocc.org | Phone: (223) 555-2300</p>
+    </div>
+    <div class="socials">
+      <a href="https://youtube.com/ilado"><img src="images/youtube.png" alt="YouTube"></a>
+      <a href="https://x.com/ilado"><img src="images/twitter.jpg" alt="Twitter"></a>
+      <a href="https://linkedin.com/ilado"><img src="images/linkedin.png" alt="LinkedIn"></a>
+    </div>
+    <p>WDD231 Project | © <span id="currentyear"></span> Ilado Chamber of Commerce | Last Updated: <span id="lastModified"></span></p>
+  </footer>
+   
+   <script src="scripts/navigation.js"></script>
+   <script src="scripts/date.js"></script>
+
+  <script src="scripts/discover.js"></script>
+</body>
+</html>

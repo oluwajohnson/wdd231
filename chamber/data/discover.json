@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Greenfield Market",
+    "address": "45 Harvest Road, AgriTown",
+    "image": "images/office3.jpg",
+    "description": "A bustling marketplace featuring organic produce, local dairy, and handmade farm goods."
+  },
+  {
+    "name": "AgroTech Training Center",
+    "address": "10 Farmer Lane, AgriTown",
+    "image": "images/office1.jpg",
+    "description": "Empowering farmers with digital and mechanical farming techniques for increased yield."
+  },
+  {
+    "name": "Sunny Harvest Farms",
+    "address": "32 Sunshine Blvd, AgriTown",
+    "image": "images/office2.jpg",
+    "description": "A family-run farm offering farm tours and seasonal fruit picking events."
+  },
+  {
+    "name": "AgriTown Cooperative",
+    "address": "20 Seed Avenue, AgriTown",
+    "image": "images/office1.jpg",
+    "description": "Supporting smallholder farmers with access to loans, seeds, and technical advice."
+  },
+  {
+    "name": "Farmers' Innovation Hub",
+    "address": "78 Growth Street, AgriTown",
+    "image": "images/office3.jpg",
+    "description": "A center for agri-entrepreneurs to connect, learn, and develop agricultural startups."
+  },
+  {
+    "name": "AgriTown Farmers Day",
+    "address": "Central Park, AgriTown",
+    "image": "images/office3.jpg",
+    "description": "A community event where farmers showcase products directly to consumers every Saturday."
+  },
+  {
+    "name": "AgriTown Eco Garden",
+    "address": "12 Green Way, AgriTown",
+    "image": "images/office1.jpg",
+    "description": "A sustainable garden demonstrating eco-friendly farming and composting methods."
+  },
+  {
+    "name": "Harvest Museum",
+    "address": "5 Heritage Street, AgriTown",
+    "image": "images/office2.jpg",
+    "description": "Preserving the history of agriculture, tools, and innovations across generations."
+  }
+]

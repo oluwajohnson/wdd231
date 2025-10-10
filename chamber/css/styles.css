@@ -254,4 +254,7 @@ footer {
   #menuBtn {
     display: block;
   }
+    header .logo {
+  display: block;
+  }
 }

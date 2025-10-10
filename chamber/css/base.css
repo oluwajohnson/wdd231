@@ -1,0 +1,184 @@
+:root{
+  --primary: #004080;
+  --accent: #00aaff;
+  --bg: #fbfbfb;
+  --text: #222;
+  --card-gap: 1rem;
+}
+
+
+body {
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.4;
+}
+
+
+
+
+header {
+  display: flex;
+  
+  align-items: center;
+  background: var(--primary);
+  color: white;
+  padding: 1rem;
+}
+
+header .logo {
+
+  display: flex;
+
+}
+header .logo img {
+  height: 40px;
+  margin-right: 10px;
+  display: flex;
+
+}
+header .logo h1 {
+ font-size: 20px;
+
+}
+
+nav {
+  margin-left: auto;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  justify-items: right;
+  align-items: right;
+
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a.active {
+  border-bottom: 2px solid var(--secondary);
+}
+
+#menuBtn {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+#discover {
+  padding: 1rem;
+}
+
+.discover-grid {
+  display: grid;
+  grid-template-areas:
+    "card1"
+    "card2"
+    "card3"
+    "card4"
+    "card5"
+    "card6"
+    "card7"
+    "card8";
+  gap: 1rem;
+}
+
+.card {
+  border: 1px solid #ddd;
+  background-color: white;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card figure {
+  margin: 0;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #388e3c;
+}
+
+
+
+footer {
+  background: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  justify-content: space-between;
+}
+
+.socials img {
+  width: 24px;
+  height: 24px;
+  margin: 0 5px;
+}
+.socials  {
+  display: flex;
+ padding: 1rem;
+   justify-content: center;
+}
+
+
+.site-footer { background: var(--primary); color:white; padding:1rem 0; margin-top:2rem; }
+.footer-inner { display:flex; gap:2rem; flex-wrap:wrap; align-items:center; justify-content:space-between; }
+
+
+@media (max-width: 768px) {
+ .menu-list { display:none; flex-direction:column; gap:.5rem; background:transparent; }
+
+  .header-inner { padding: .5rem 1rem; }
+  .members-grid { grid-template-columns: 1fr; }
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background: var(--primary);
+    padding: 1rem;
+  }
+  nav ul.show {
+    display: flex;
+  }
+  #menuBtn {
+    display: block;
+  }
+  header .logo {
+  display: block;
+  }
+}
