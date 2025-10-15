@@ -1,9 +1,9 @@
-/* Typography and Color Schema */
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@600&display=swap');
 
 :root {
-  --primary-color: #3B7A57;  /* Green - headings & accents */
-  --secondary-color: #F2E8CF; /* Beige - background */
+  --primary-color: #3B7A57;  
+  --secondary-color: #F2E8CF; 
   --text-color: #333;
 }
 
@@ -86,10 +86,13 @@ figcaption {
   margin-top: 0.5em;
 }
 
-/* Responsive layout for larger screens */
+
 @media (min-width: 768px) {
   .wireframes {
     flex-direction: row;
     justify-content: center;
   }
 }
+
+
+

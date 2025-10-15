@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>FarmLink — Products & Services</title>
+  <meta name="description" content="Browse products and services from local farmers.">
+  <meta name="author" content="Your Name">
+  <link rel="icon" href="images/placeholder.webp" type="image/webp">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/farmStyles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">
+          <img src="images/placeholder1.webp" alt="FarmLink logo">
+        </div>
+        <div class="site-title">FarmLink</div>
+      </div>
+      </a>
+      <nav aria-label="Main">
+        <button id="menuBtn" aria-expanded="false" aria-controls="menuList">☰</button>
+        <ul id="menuList" class="menu-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html" class="active">Products</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" id="discover">
+    <div id="visit-message" class="visit-message" aria-live="polite"></div>
+
+    <section aria-labelledby="products-heading">
+      <h2 id="products-heading">Products & Services</h2>
+
+      <div class="grid-controls">
+        <button id="gridView" class="view-btn" aria-pressed="true">Grid</button>
+        <button id="listView" class="view-btn" aria-pressed="false">List</button>
+      </div>
+
+      <div class="products-grid" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <!-- Accessible dialog -->
+  <dialog id="itemModal" aria-labelledby="modalTitle" aria-modal="true">
+    <div>
+      <h3 class="modal-title" id="modalTitle"></h3>
+      <div class="modal-body"></div>
+      <p><button data-modal-close>Close</button></p>
+    </div>
+  </dialog>
+
+  <footer class="site-footer">
+    <div class="container"><p>&copy; <span id="year"></span> FarmLink</p></div>
+  </footer>
+
+  <script type="module" src="script/global.js"></script>
+  <script type="module" src="script/main-products.js"></script>
+</body>
+</html>

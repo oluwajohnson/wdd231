@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>FarmLink — Thank you</title>
+  <meta name="description" content="Thank you for joining FarmLink.">
+  <meta name="author" content="Your Name">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/farmStyles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand"><div class="logo" aria-hidden="true"></div><div class="site-title">FarmLink</div></div>
+      <nav aria-label="Main">
+        <ul class="menu-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Thank you!</h1>
+    <p>We received your application. Below are the submitted required details:</p>
+    <ul id="resultList" style="margin-top:.75rem"></ul>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container"><p>&copy; <span id="year"></span> FarmLink</p></div>
+  </footer>
+
+  <script>
+    // parse URL params and display required fields safely
+    const params = new URLSearchParams(window.location.search);
+    const required = ['firstName','lastName','email','mobile','organization','timestamp'];
+    const ul = document.getElementById('resultList');
+    required.forEach(key => {
+      const li = document.createElement('li');
+      const val = params.get(key) || '(not provided)';
+      li.textContent = `${key}: ${val}`;
+      ul.appendChild(li);
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

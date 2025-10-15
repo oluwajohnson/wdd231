@@ -1,0 +1,17 @@
+[
+  {"id":1,"amount":"N5,000","name":"Greenfield Produce Market","address":"45 Harvest Rd","category":"Market","price":"Varies","image":"images/placeholder1.webp","description":"Organic vegetables and fruits from local smallholder farms."},
+  {"id":2,"amount":"N55,000","name":"Sunny Harvest Farm","address":"32 Sunshine Blvd","category":"Fruit Farm","price":"Seasonal","image":"images/placeholder2.webp","description":"Pick-your-own events and seasonal fruit boxes."},
+  {"id":3,"amount":"N25,000","name":"Coastal Dairy Co.","address":"11 River Lane","category":"Dairy","price":"Per kg","image":"images/placeholder3.webp","description":"Fresh milk, cheese, and dairy products from nearby farms."},
+  {"id":4,"amount":"N54,000","name":"Greenhouse Collective","address":"10 Cold St","category":"Greenhouse","price":"Varies","image":"images/placeholder4.webp","description":"Seedlings, greenhouse-grown produce, and supplies."},
+  {"id":5,"amount":"N15,000","name":"AgriTech Service","address":"4 Tech Park","category":"Service","price":"Consult","image":"images/placeholder5.webp","description":"Machinery repair and automation training for farms."},
+  {"id":6,"amount":"N75,000","name":"Riverbank Apiary","address":"8 Bee Way","category":"Honey","price":"Per jar","image":"images/placeholder6.webp","description":"Raw honey and pollination services."},
+  {"id":7,"amount":"N105,000","name":"Harvest Bakery","address":"7 Dough St","category":"Food","price":"Per item","image":"images/placeholder7.webp","description":"Bread and pastries made with locally milled grains."},
+  {"id":8,"amount":"N53,000","name":"Green Gardens Landscaping","address":"22 Greenway Rd","category":"Services","price":"Quote","image":"images/placeholder1.webp","description":"Landscaping and garden maintenance."},
+  {"id":9,"amount":"N59,000","name":"Fresh Fish Market","address":"1 Dockside","category":"Fish","price":"Per kg","image":"images/placeholder2.webp","description":"Sustainably caught fish from local waters."},
+  {"id":10,"amount":"N50,000","name":"Seed & Supply","address":"19 Market Plaza","category":"Supplies","price":"Per bag","image":"images/placeholder3.webp","description":"Seeds, fertilizer, and essential farm supplies."},
+  {"id":11,"amount":"N57,000","name":"Bright Minds Tutoring","address":"100 Study Blvd","category":"Education","price":"Per hour","image":"images/placeholder4.webp","description":"Workshops on preservation, composting and small-business skills."},
+  {"id":12,"amount":"N54,000","name":"Riverside Pharmacy","address":"7 Health St","category":"Health","price":"Varies","image":"images/placeholder5.webp","description":"Health supplies and farmworker wellness services."},
+  {"id":13,"amount":"N53,000","name":"Fieldside Cafe","address":"6 Lunch Lane","category":"Food","price":"Per meal","image":"images/placeholder6.webp","description":"Farm-to-table cafe featuring seasonal menus."},
+  {"id":14,"amount":"N52,000","name":"Market Co-op Hall","address":"3 Community St","category":"Community","price":"Events","image":"images/placeholder7.webp","description":"Weekly market events, training, and community meetings."},
+  {"id":15,"amount":"N59,000","name":"Harvest Museum","address":"5 Heritage St","category":"Culture","price":"Ticketed","image":"images/placeholder1.webp","description":"A history of farming displays and artifacts."}
+]

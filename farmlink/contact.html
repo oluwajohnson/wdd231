@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>FarmLink — Join / Contact</title>
+  <meta name="description" content="Join FarmLink or contact us.">
+  <meta name="author" content="Your Name">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/farmStyles.css">
+  <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">
+          <img src="images/placeholder1.webp" alt="FarmLink logo">
+        </div>
+        <div class="site-title">FarmLink</div>
+      </div>
+      </a>
+      <nav aria-label="Main">
+        <button id="menuBtn" aria-expanded="false" aria-controls="menuList">☰</button>
+        <ul id="menuList" class="menu-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Join FarmLink</h1>
+
+    <form method="get" action="thankyou.html" novalidate>
+      <label>
+        First name
+        <input type="text" name="firstName" required title="First name" autocomplete="given-name">
+      </label>
+
+      <label>
+        Last name
+        <input type="text" name="lastName" required title="Last name" autocomplete="family-name">
+      </label>
+
+      <label>
+        Organizational title
+        <input type="text" name="orgTitle" title="Organizational title" autocomplete="organization-title" pattern="[A-Za-z\s-]{7,}">
+      </label>
+
+      <label>
+        Email
+        <input type="email" name="email" required title="Email address" autocomplete="email" placeholder="you@example.com">
+      </label>
+
+      <label>
+        Mobile phone
+        <input type="tel" name="mobile" required title="Mobile phone" autocomplete="tel">
+      </label>
+
+      <label>
+        Business / Organization name
+        <input type="text" name="organization" required title="Organization name" autocomplete="organization">
+      </label>
+
+      <label>
+        Membership level
+        <select name="membership" title="Select membership">
+          <option value="np">NP Membership (Non-profit)</option>
+          <option value="bronze">Bronze</option>
+          <option value="silver">Silver</option>
+          <option value="gold">Gold</option>
+        </select>
+      </label>
+
+      <label>
+        Organization description
+        <textarea name="description" title="Organization description"></textarea>
+      </label>
+
+      <input type="hidden" id="timestamp" name="timestamp">
+
+      <input type="submit" value="Submit Application">
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container"><p>&copy; <span id="year"></span> FarmLink</p></div>
+  </footer>
+  <script type="module" src="script/global.js"></script>
+  <script src="script/form.js" defer></script>
+</body>
+</html>
