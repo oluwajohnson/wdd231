@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>FarmLink — Connect with Local Farmers</title>
+  <meta name="description" content="FarmLink connects local farmers and buyers. Fresh produce, services, and farm resources nearby.">
+  <meta name="author" content="Ogunleye Johnson">
+  <link rel="icon" href="images/placeholder1.webp" type="image/webp">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/farmStyles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html">
+      <div class="brand">
+          <div class="logo" aria-hidden="true">
+            <img src="images/placeholder1.webp" alt="FarmLink logo">
+          </div>
+          <div class="site-title">FarmLink</div>
+        </div>
+      </a>
+      <nav aria-label="Main">
+        <button id="menuBtn" aria-expanded="false" aria-controls="menuList">☰</button>
+        <ul id="menuList" class="menu-list">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero" aria-labelledby="hero-heading">
+      <h1 id="hero-heading">Connect with local farmers — fresh, reliable produce</h1>
+      <p>FarmLink helps smallholder farmers reach buyers in the neighborhood, reducing post-harvest loss and boosting incomes.</p>
+      <div class="btnPress" aria-live="polite">
+        <p><a class="view-btn" href="products.html">Explore Products</a> <a class="view-btn" href="contact.html">Join as a Farmer</a></p>
+      </div>
+
+    </section>
+
+    <section aria-labelledby="featured-title" style="margin-top:1rem">
+      <h2 id="featured-title">Featured</h2>
+      <div class="products-grid" aria-live="polite"></div>
+    </section>
+     <input type="hidden" id="timestamp" name="timestamp">
+  </main>
+  <!-- Accessible dialog -->
+  <dialog id="itemModal" aria-labelledby="modalTitle" aria-modal="true">
+    <div>
+      <h3 class="modal-title" id="modalTitle"></h3>
+      <div class="modal-body"></div>
+      <p><button data-modal-close>Close</button></p>
+    </div>
+  </dialog>
+
+  <footer class="site-footer">
+    <div class="contact">
+      <p><strong>FarmLink Incorperation</strong></p>
+      <p>Lemon Street Abuja</p>
+      <p>Email: info@farmlink.org | Phone: (223) 555-2300</p>
+    </div>
+    <div class="socials">
+      <a href="#"><img src="images/youtube.png" alt="YouTube"></a>
+      <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+      <a href="#"><img src="images/linkedin.png" alt="LinkedIn"></a>
+    </div>
+    <p>WDD231 Project | © <span id="currentyear"></span> FarmLink Project | Last Updated: <span id="lastModified"></span></p>
+  </footer>
+
+  <script type="module" src="script/global.js"></script>
+  <script type="module" src="script/main-index.js"></script>
+</body>
+</html>

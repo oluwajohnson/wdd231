@@ -1,77 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>FarmLink — Connect with Local Farmers</title>
-  <meta name="description" content="FarmLink connects local farmers and buyers. Fresh produce, services, and farm resources nearby.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Ogunleye Johnson">
-  <link rel="icon" href="images/placeholder1.webp" type="image/webp">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/farmStyles.css">
+  <meta name="description" content="FarmLink site plan - an online platform for farmers to showcase agricultural products and services.">
+  <meta property="og:description" content="FarmLink site plan - an online platform for farmers to showcase agricultural products and services." />
+  <meta property="og:image" content="https://example.com/images/og-directory.jpg" />
+  <meta property="og:url" content="https://example.com/index.html" />
+  <meta property="og:type" content="website" />
+  <title>FarmLink | Site Plan</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/png" href="images/favicon-32.png" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a href="index.html">
-      <div class="brand">
-          <div class="logo" aria-hidden="true">
-            <img src="images/placeholder1.webp" alt="FarmLink logo">
-          </div>
-          <div class="site-title">FarmLink</div>
-        </div>
-      </a>
-      <nav aria-label="Main">
-        <button id="menuBtn" aria-expanded="false" aria-controls="menuList">☰</button>
-        <ul id="menuList" class="menu-list">
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="products.html">Products</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
+  <header>
+    <h1>FarmLink Site Plan</h1>
+    <p><strong>Course Project:</strong> Individual Website Plan Document</p>
   </header>
 
-  <main class="container">
-    <section class="hero" aria-labelledby="hero-heading">
-      <h1 id="hero-heading">Connect with local farmers — fresh, reliable produce</h1>
-      <p>FarmLink helps smallholder farmers reach buyers in the neighborhood, reducing post-harvest loss and boosting incomes.</p>
-      <div class="btnPress" aria-live="polite">
-        <p><a class="view-btn" href="products.html">Explore Products</a> <a class="view-btn" href="contact.html">Join as a Farmer</a></p>
+  <main>
+    <section id="site-name">
+      <h2>Site Name</h2>
+      <p><strong>FarmLink</strong> — The name represents a digital platform that connects farmers to buyers, neighbors, and service providers. It reflects the mission of creating a link between producers and the market while promoting visibility for agricultural products.</p>
+      <p><em>Optional domain:</em> <a href="#">farmlinkhub.org</a></p>
+    </section>
+
+    <section id="site-purpose">
+      <h2>Site Purpose</h2>
+      <p>The purpose of this website is to provide an online space for farmers to showcase their agricultural products and services to potential buyers in their neighborhood and beyond. The site helps reduce post-harvest losses by giving farmers visibility, offering contact forms for direct orders, and sharing best practices in local farming communities.</p>
+    </section>
+
+    <section id="scenarios">
+      <h2>Scenarios</h2>
+      <ul>
+        <li>Where can I find nearby farmers offering fresh vegetables or grains?</li>
+        <li>How can I contact a farmer to purchase produce directly from their farm?</li>
+      </ul>
+    </section>
+
+    <section id="color-schema">
+      <h2>Color Scheme</h2>
+      <p>The selected colors represent freshness, growth, and trust — reflecting the agricultural theme of the project.</p>
+      <ul>
+        <li><strong>Primary Color:</strong> <span class="color-sample green"></span> <code>#3B7A57</code> – Used for headings and accents.</li>
+        <li><strong>Secondary Color:</strong> <span class="color-sample beige"></span> <code>#F2E8CF</code> – Used for background and contrast areas.</li>
+      </ul>
+    </section>
+
+    <section id="typography">
+      <h2>Typography</h2>
+      <p><strong>Primary Font:</strong> <em>'Poppins', sans-serif</em> – used for headings and navigation.</p>
+      <p><strong>Secondary Font:</strong> <em>'Open Sans', sans-serif</em> – used for paragraph and body text.</p>
+
+      <div class="font-demo">
+        <h3>Heading Example (Poppins)</h3>
+        <p>This is body text using Open Sans. It will be used across all paragraph sections for better readability and a modern web aesthetic.</p>
       </div>
-
     </section>
 
-    <section aria-labelledby="featured-title" style="margin-top:1rem">
-      <h2 id="featured-title">Featured</h2>
-      <div class="products-grid" aria-live="polite"></div>
+    <section id="wireframe">
+      <h2>Wireframe</h2>
+      <p>Below are simple wireframe sketches representing the structure of the homepage for both mobile and desktop layouts.</p>
+
+      <div class="wireframes">
+        <figure>
+          <img src="images/wireframe-mobile.png" alt="Mobile Wireframe layout for FarmLink homepage" loading="lazy">
+          <figcaption>Mobile Layout Wireframe</figcaption>
+        </figure>
+        <figure>
+          <img src="images/wireframe-desktop.jpg" alt="Desktop Wireframe layout for FarmLink homepage" loading="lazy">
+          <figcaption>Desktop Layout Wireframe</figcaption>
+        </figure>
+      </div>
     </section>
-     <input type="hidden" id="timestamp" name="timestamp">
   </main>
-  <!-- Accessible dialog -->
-  <dialog id="itemModal" aria-labelledby="modalTitle" aria-modal="true">
-    <div>
-      <h3 class="modal-title" id="modalTitle"></h3>
-      <div class="modal-body"></div>
-      <p><button data-modal-close>Close</button></p>
-    </div>
-  </dialog>
 
-  <footer class="site-footer">
-    <div class="contact">
-      <p><strong>FarmLink Incorperation</strong></p>
-      <p>Lemon Street Abuja</p>
-      <p>Email: info@farmlink.org | Phone: (223) 555-2300</p>
-    </div>
-    <div class="socials">
-      <a href="#"><img src="images/youtube.png" alt="YouTube"></a>
-      <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
-      <a href="#"><img src="images/linkedin.png" alt="LinkedIn"></a>
-    </div>
-    <p>WDD231 Project | © <span id="currentyear"></span> FarmLink Project | Last Updated: <span id="lastModified"></span></p>
+  <footer>
+    <p>&copy; 2025 FarmLink | Site Plan Project</p>
   </footer>
-
-  <script type="module" src="script/global.js"></script>
-  <script type="module" src="script/main-index.js"></script>
 </body>
 </html>
